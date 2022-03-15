@@ -19,7 +19,7 @@ public:
         hours = hr;
         minutes = min;
     }
-    void print_time(void);  //
+    void print_time(void);  // A function to print the time (in format HH:MM)..
 };
 
 /*A friend function 'add' -takes 2 arguments of type object of TIME Class and adds them using their

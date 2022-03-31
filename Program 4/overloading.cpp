@@ -11,7 +11,7 @@ void printbyOverload(int a, int b, int c) // Function  to print it's given integ
 }
 void printbyOverload(int a, int b)   //-fun 2
 {
-    printbyOverload(a, b, 0); // Here fun 3 is called with c as default value which is 0;
+    printbyOverload(a, b, 0); // Here fun 1 is called with c as default value which is 0;
 }
 void printbyOverload(int a)   //-fun 3
 {

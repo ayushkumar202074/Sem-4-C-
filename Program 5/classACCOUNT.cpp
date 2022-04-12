@@ -16,7 +16,8 @@ class Account
 
 public:
     // Member functions.
-    Account() // A default constructor to initialize some default values to few data members.
+    Account() // A default constructor to initialize some default values to
+              //few data members.
     {
         Amount = 0.99;
         rate = 7;
@@ -24,8 +25,8 @@ public:
         strcpy(Name, "John Doe");
         strcpy(ifsc, "MT0034");
     }
-    Account(int AcNumber, char name[], char Ifsc[]) /*A parameterized constructor to initialize some
-    values manually to few data members*/
+    Account(int AcNumber, char name[], char Ifsc[]) /*A parameterized constructor
+                        t     o initialize some values manually to few data members*/
     {
         Ano = AcNumber;
         Amount = 0.93;
@@ -34,10 +35,12 @@ public:
     }
     void inputbankDetails(void); // A member function to take all necessary details from the user..
     void showbankDetails(void);  // A member function to Display all the details taken from the user..
-    void balancEnq(int);         // A function to acess the balance at anytime provided the account number as the argument.
+    void balancEnq(int);         // A function to acess the balance at anytime provided the account 
+                                 //   number as the argument.
     void deposit(void);          // A function to deposit money in bank account.
     void withdraw(void);         // A function to withdraw money from bank account.
-    float interestCal(void);     // A function to calculate intrest(simple) and displays on output screen;
+    float interestCal(void);     // A function to calculate intrest(simple) and displays
+                                 // on output screen;
 };
 
 void br(void) // A simple function to insert a horizontal rule or a thematic break.
@@ -85,7 +88,8 @@ void Account::withdraw(void)
     int amt;
     cout << "\nEnter the amount to be withdrawn : ";
     cin >> amt;
-    if (amt <= Amount) // Total amount to be withdrawn 'amt' must be less than equal to the original Amount;
+    if (amt <= Amount) // Total amount to be withdrawn 'amt' must be 
+                       // less than equal to the original Amount;
     {
         Amount = Amount - amt;
         cout << "You withdrew " << amt;
@@ -111,7 +115,9 @@ void Account::balancEnq(int Ac)
     }
 }
 float Account::interestCal(void)
-{ // This Function takes all necessary inputs and returns the calculated intrest(simple) value;
+{ 
+                  /*This Function takes all necessary inputs and returns the 
+                    calculated intrest(simple) value;*/
     br();
     cout << "\nEnter Principal amount :";
     cin >> pr;

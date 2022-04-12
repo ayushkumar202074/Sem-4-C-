@@ -7,14 +7,16 @@ int **getMatrix(int, int);
 // A function to print matrix elements..
 void printMatrix(int **, int, int);
 
-int **getMatrix(int row, int column) /*It takes 2 arguments rows and cols and returns a pointer to a
- pointer.The pointer to a pointer serves as a 2D array which is
+int **getMatrix(int row, int column) /*It takes 2 arguments rows and cols and returns 
+ a pointer to a pointer.The pointer to a pointer serves as a 2D array which is
  allocated dynamically in heap memory*/
 {
-  int **arr = new int *[row]; /*Dynamic array of pointer of size "row" is allocated and linked to pointer to pointer "arr" */
+  int **arr = new int *[row]; /*Dynamic array of pointer of size "row" is allocated and
+  linked to pointer to pointer "arr" */
   for (int i = 0; i < row; i++)
   {
-    arr[i] = new int[column]; /* Dynamic array of size "column" is allocated and is linked to pointer to pointer "arr" for every iteration of rows*/
+    arr[i] = new int[column]; /* Dynamic array of size "column" is allocated and is linked
+                                 to pointer to pointer "arr" for every iteration of rows*/
   }
   // Simple logic to get input using linked "arr" pointer to pointer.
   for (int i = 0; i < row; i++)
@@ -29,8 +31,9 @@ int **getMatrix(int row, int column) /*It takes 2 arguments rows and cols and re
 }
 
 // A function to print the matrix input by user.
-void printMatrix(int **Array, int row, int col) /*A simple function that takes 3 arguments pointer to pointer , row and column and
-   prints the content of allocated matrix .*/
+void printMatrix(int **Array, int row, int col) /*A simple function that takes
+   3 arguments pointer to pointer , row and column and prints the content of 
+   allocated matrix .*/
 {
   cout << "Matrix : \n";
   for (int i = 0; i < row; i++)
@@ -50,7 +53,9 @@ int main(void)
   cin >> m;
   cout << "Enter n : ";
   cin >> n;
-  printMatrix(getMatrix(m, n), m, n); // getMatrix function is called with arguments as m and n;
-    // then pointer to pointer returned by getMatrix is passed as one of an argument in printMatrix with size m & n;
+  printMatrix(getMatrix(m, n), m, n); // getMatrix function is called with 
+                                      // arguments as m and n;
+  // then pointer to pointer returned by getMatrix is passed as one of an 
+  //argument in printMatrix with size m & n;
   return 0;
 }

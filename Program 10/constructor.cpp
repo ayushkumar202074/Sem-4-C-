@@ -73,11 +73,9 @@ int main(void)
     e1.displayData();  //prints the default values.. -default constructor is called;
     Employee e2("Rohit", 117, 289, "Programmer", 30000);  // parameterized constructor is called;
     e2.displayData();  //prints the passed values..
-    // Employee e3=e1;  //
-    // e3.displayData();
-    Employee e4(e2);  //copy constructor is called   -copies the 'e2' to 'e1' ..
+    Employee e4(e2);  //copy constructor is called   -copies the 'e2' to 'e4' ..
     e4.displayData();  //prints same result as 'e2' ..
-    Employee e5(59999.99); //constructor overloading.
+    Employee e5(59999.99); //constructor overloading..
     e5.displayData();
 
     return 0;

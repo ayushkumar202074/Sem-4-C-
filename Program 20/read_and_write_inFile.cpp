@@ -3,7 +3,6 @@ then display it*/
 #include <iostream>
 #include<fstream>
 using namespace std;
-
 int main(void)
 {
     ofstream infile;
@@ -16,8 +15,7 @@ int main(void)
     cin.getline(name,20);
     cout<<"Enter Student's Roll_no : ";
     cin>>rollno;
-
-
+    
     //Writing into a file (studentData.txt) 
     infile<<rollno<<" ";
     infile<<name<<"\n";
@@ -36,8 +34,5 @@ int main(void)
         cout<<container<<endl;
     }
     outfile.close();
-
-
-
     return 0;
 }

@@ -1,4 +1,5 @@
-// Create the class TIME to store time in hours and minutes .Write a friend function to add two TIME objects..
+/* Create the class TIME to store time in hours and minutes .
+Write a friend function to add two TIME objects..*/
 #include <iostream>
 using namespace std;
 

@@ -28,8 +28,10 @@ data members,stores them in another temporary Object of TIME class 'temp' and fi
 TIME add(TIME t1, TIME t2)
 {
     TIME temp;
-    temp.hours = t1.hours + t2.hours;   //Adds the 'hours' of both passed object (t1 and t2) and assigns it to temp's datamember
-    temp.minutes = t1.minutes + t2.minutes;  //Adds the 'minutes' of both passed object (t1 and t2) and assigns it;
+    temp.hours = t1.hours + t2.hours; /*Adds the 'hours' of both passed object (t1 and t2) and assigns it 
+                                      to temp's datamember*/
+    temp.minutes = t1.minutes + t2.minutes;  /*Adds the 'minutes' of both passed object 
+                                             (t1 and t2) and assigns it;*/
 
     if (temp.minutes >= 60)    //Logic to compensate minutes overflow
     {

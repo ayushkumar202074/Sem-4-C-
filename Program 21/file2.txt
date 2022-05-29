@@ -1,0 +1,14 @@
+1 To
+2 The Head of Department 
+3 His/her official address
+4 Date: February 11, 2019
+5 Subject: A request to grant me leave for the days I was absent
+6 Sir/Madam,
+7 I underwent an operation on January 3, 2019. The doctor, who operated upon me,
+8 advised to take a complete rest till I fully recovered from my operation. 
+9 Therefore, I was unable to come to college from January 3, 2019, to February 9, 2019. 
+10 Kindly grant me leave for these days when I was absent.
+11 Thank you
+12 Yours truly
+Hello world this is the file content..
+I am ironman.
